@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import time
 # Dictionary of Data (Values and Weight)
 coin_data = {
     "£2": {"value": 20, "weight": 120.00},
@@ -91,6 +92,7 @@ def main():
             total_value = sum(v["total_value"] for v in volunteers)
             print(f"Total number of bags: {total_bags}")
             print(f"Total value: £{total_value:.2f}")
+            time.sleep(2)
 
         elif choice == "3":
             sorted_volunteers = sorted(volunteers, key=lambda v: (v["bags_counted"] > 0)
@@ -112,12 +114,14 @@ def main():
 
             df2 = df.to_string(index=False)
             print(df2)
+            time.sleep(2)
 
             continue
 
         elif choice == "5":
             save_data()
             print("Data saved. Exiting...")
+            time.sleep(2)
             break
 
         else:
