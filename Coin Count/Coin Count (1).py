@@ -48,7 +48,7 @@ def main():
 # Main Menu
     while True:
         print("\nMenu:")
-        print("1. Input coin details")
+        print("1. Input Volenteer and Coin Details")
         print("2. Display total number of bags and total value")
         print("3. Display volunteer accuracy")
         print("4. Display Weights and Values of coins.")
